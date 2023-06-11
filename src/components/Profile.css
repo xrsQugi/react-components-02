@@ -57,11 +57,8 @@
 }
 
 .stats{
-    margin: 0;
-    padding: 0;
     width: 450px;
     height: 130px;
-    list-style: none;
     display: flex;
     flex-direction: row;
     background-color: #F3F6F9;
@@ -91,7 +88,9 @@
 }
 
 .stats li:nth-child(3){
-    border-top: 2px solid #E9EDF3;
+    border-width: 2px 0px 0px 2px;
+    border-style: solid;
+    border-color: #E9EDF3;
     border-radius: 0px 0px 10px 0px;
 }
 

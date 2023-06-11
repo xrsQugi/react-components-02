@@ -1,4 +1,5 @@
 import "./Profile.css";
+import PropTypes from "prop-types";
 
 export default function Profile({ username="Someone", tag="Someone`s tag", location="Somewhere", avatar="https://static.chipdip.ru/images/layout/noimage/230px.png", stats={followers: 0, views: 0, likes: 0} }){
   return(
@@ -26,3 +27,11 @@ export default function Profile({ username="Someone", tag="Someone`s tag", locat
     </div>
   )
 };
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.node,
+  stats: PropTypes.object
+}
